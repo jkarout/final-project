@@ -1,0 +1,88 @@
+body {
+    background-color: #1a1e2b;
+    color: white;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+nav {
+    background-color: #11141c;
+    padding: 15px;
+    border-bottom: 2px solid cyan;
+    text-align: center;
+}
+nav a {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none; 
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+nav a:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+/* Hero / Main Content */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5em;
+    color: cyan;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto 30px auto;
+    color: #b0c4de;
+}
+
+/* PHOTO STYLING (Matches Bench Press Style) */
+.profile-pic {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #2a2e3d;
+    margin-bottom: 30px;
+    /* Animation from Bench Press page */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Slight Zoom */
+    box-shadow: 0 0 20px cyan; /* Cyan Glow */
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: cyan;
+    color: #1a1e2b;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    border: none;
+    transition: transform 0.2s;
+}
+.btn-custom:hover {
+    background-color: darkcyan;
+    color: white;
+    transform: scale(1.05);
+}
